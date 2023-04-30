@@ -1,39 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
 body {
-    background: #353f5b;
-  }
-  .container {
-    max-width: 400px;
-    margin-top: 90px;
-  }
-  .search i {
-    position: absolute;
-  }
-  .search {
-    position: relative;
-  }
-  .icon {
-    padding: 10px;
-    left: 0;
-  }
-  .input-field {
-    text-align: center;
-  }
-  
-  input[type="text"],
-  input[type="text"]:focus {
-    color: #fff;
-    border: none;
-    background: rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-  }
-  .todos li {
-    background: #423a6f;
-  }
-  .delete {
-    cursor: pointer;
-  }
-  
-  
-  .filtered{
-    display: none !important;
-  }
+	font-family: sans-serif;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	background-image: url('/images/1.jpg');
+}
+
+.container{
+	width: 400px;
+	height: 500px;
+	border-radius: 10%;
+	background-color: rgb(45, 67, 60);
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.covermusic{
+	background-color: brown;
+	width: 300px;
+	height: 300px;
+	border-radius: 10%;
+	position: relative;
+	top: -50px;
+	overflow: hidden;
+}
+.information-music{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.progers-bar{
+	margin-top: 25px;
+	width: 90%;
+	height: 5px;
+	background-color: azure;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.progers{
+	width: 50%;
+	background-color: rgb(208, 0, 0);
+	height: 5px;
+}
+.bottons-music{
+	width: 100%;
+	display: flex;
+justify-content: space-around;
+margin-top: 25px;
+cursor: pointer;
+}
+i:hover{
+color: blue;
+}
+img{
+	width: 300px;
+	height: 300px;
+	
+}
